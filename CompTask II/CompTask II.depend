@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1679040091 source:c:\codeblocks\files\comptask ii\main.cpp
+	"LInt.h"
+	"NInt.h"
+	"Func.h"
+	<locale.h>
+
+1679040076 c:\codeblocks\files\comptask ii\lint.h
+	"Func.h"
+	<math.h>
+
+1679040082 c:\codeblocks\files\comptask ii\nint.h
+	"Func.h"
+	<math.h>
+
+1679031881 c:\codeblocks\files\comptask ii\func.h
+	<iostream>
+
+1679031873 source:c:\codeblocks\files\comptask ii\func.cpp
+	<math.h>
+	<iostream>
+
