@@ -1,13 +1,13 @@
 #ifndef NINT_H_INCLUDED
 #define NINT_H_INCLUDED
 
-// Этап 2.2 Интерполяционный многочлен Ньютона
+// ГќГІГ ГЇ 2.2 Г€Г­ГІГҐГ°ГЇГ®Г«ГїГ¶ГЁГ®Г­Г­Г»Г© Г¬Г­Г®ГЈГ®Г·Г«ГҐГ­ ГЌГјГѕГІГ®Г­Г .
 #include"Func.h"
 #include<math.h>
 
 void NewtonInterpolation(double *arg, size_t size, size_t deg, double x, double (*fnc)(double*, size_t, double, double), double (*f)(double))
 {
-    cout << "Интерполяция Ньютона:" << endl;
+    cout << "Г€Г­ГІГҐГ°ГЇГ®Г«ГїГ¶ГЁГї ГЌГјГѕГІГ®Г­Г :" << endl;
     size_t degp = deg + 1;
     double space[degp][deg], total = 0, product = 1;
     for(size_t i = 0; i < deg; i++)
@@ -47,8 +47,8 @@ void NewtonInterpolation(double *arg, size_t size, size_t deg, double x, double 
         product *= (x - arg[i-1]);
     }
 
-    cout << "Значение в точке интерполяции х = " << x << ": " << total << endl;
-    cout << "Абсолютная погрешность: " << fabs(total - f(x)) << endl << endl;
+    cout << "Г‡Г­Г Г·ГҐГ­ГЁГҐ Гў ГІГ®Г·ГЄГҐ ГЁГ­ГІГҐГ°ГЇГ®Г«ГїГ¶ГЁГЁ Гµ = " << x << ": " << total << endl;
+    cout << "ГЂГЎГ±Г®Г«ГѕГІГ­Г Гї ГЇГ®ГЈГ°ГҐГёГ­Г®Г±ГІГј: " << fabs(total - f(x)) << endl << endl;
 }
 
 #endif // NINT_H_INCLUDED
